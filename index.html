@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <div class="text-center">
+            <label>
+                Algorithm
+                <select id="algorithmSelector"></select>
+            </label>
+
+            <label>
+                Array size
+                <input type="number" id="arraySize" value="1000" />
+            </label>
+
+            <label>
+                Rendering speed (in ms)
+                <input type="number" id="renderingSpeed" value="100" />
+            </label>
+
+            <button id="startSortBtn">
+                Sort
+            </button>
+        </div>
+        <div class="text-center">
+            <label>
+                Complexity:
+                <b id="algorithmComplexity"></b>
+            </label>
+
+            <label>
+                More:
+                <a target="_blank" id="moreLink"></a>
+            </label>
+        </div>
+
+        <div class="text-center">
+            <svg id="svg" height="500" width="1000" xmlns="http://www.w3.org/2000/svg" />
+        </div>
+
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>
